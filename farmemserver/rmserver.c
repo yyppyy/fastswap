@@ -7,8 +7,8 @@
 #define TEST_NZ(x) do { if ( (x)) die("error: " #x " failed (returned non-zero)." ); } while (0)
 #define TEST_Z(x)  do { if (!(x)) die("error: " #x " failed (returned zero/null)."); } while (0)
 
-const size_t BUFFER_SIZE = 1024 * 1024 * 1024 * 32l;
-const unsigned int NUM_PROCS = 8;
+const size_t BUFFER_SIZE = 1024 * 1024 * 1024 * 9l;
+const unsigned int NUM_PROCS = 24;
 const unsigned int NUM_QUEUES_PER_PROC = 3;
 const unsigned int NUM_QUEUES = NUM_PROCS * NUM_QUEUES_PER_PROC;
 
